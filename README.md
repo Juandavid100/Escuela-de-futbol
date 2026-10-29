@@ -13,7 +13,7 @@ Proyecto final de Diseño de Software, Universidad Cooperativa de Colombia, sede
 
 ## Backlog
 
-Las 20 historias de usuario están en [Issues](../../issues), con criterios de aceptación en Gherkin y organizadas en 3 sprints.
+Las 20 historias de usuario están en [Issues](../../issues), con criterios de aceptación en Gherkin.
 
 ## Prototipos
 
