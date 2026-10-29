@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HU-15 Consultar y pagar mensualidad · Prototipo</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="estilos.css"></head>
+<body><main class="pagina">
+<section class="ficha">
+<a class="volver" href="index.html">‹ Todos los prototipos</a>
+<h1>Consultar y pagar mensualidad</h1>
+<span class="codigo">HU-15</span>
+<p class="rol">Rol: Acudiente · Prioridad alta</p>
+<blockquote>Como acudiente, quiero consultar los cargos y comprobantes de mis estudiantes para estar al día con los pagos.</blockquote>
+<h2>Escenarios que muestra</h2><ol><li>Consultar el estado de cuenta</li><li>Pagar en línea</li><li>Reportar un pago hecho en efectivo</li></ol>
+<p class="nota">Saldo y vencimiento a la vista; dos caminos para pagar. El reporte manual queda en revisión.</p>
+<p class="nota">Requisitos: RF-18, RF-19, RF-20, RF-21 · <a href="https://github.com/Juandavid100/Escuela-de-futbol/issues/15">Ver criterios completos en el issue #15</a></p>
+</section>
+<section aria-label="Prototipo de pantalla"><div class="telefono"><div class="estado-sistema"><span>9:41</span><span>Escuela de Fútbol</span></div>
+<div class="pantalla"><header class="barra-app"><h3>Pagos</h3><p>Sofía Pérez · Sub-10 A</p></header><div class="cuerpo">
+<div class="tarjeta" style="text-align:center"><p class="sub">Saldo pendiente</p><div style="font-family:'Barlow Condensed',sans-serif;font-size:44px;font-weight:700;color:var(--cancha);line-height:1.1">$80.000</div><p class="sub">Noviembre 2026 · vence el 5 de noviembre</p><span class="estado pendiente" style="margin-top:6px">Pendiente</span></div>
+<a class="boton ancho" href="#">Pagar en línea</a>
+<a class="boton ancho secundario" href="#">Reportar pago en efectivo</a>
+<h4 style="margin:18px 0 0">Historial</h4>
+<div class="tarjeta" style="padding:4px 12px">
+<div class="fila"><div><div class="nombre">Octubre 2026</div><div class="det">Pagado el 03/10 · PSE</div></div><span class="estado ok">Pagado</span></div>
+<div class="fila"><div><div class="nombre">Septiembre 2026</div><div class="det">Efectivo · recibo en revisión</div></div><span class="estado pendiente">En validación</span></div></div></div><nav class="navegacion"><a href="#">Inicio</a><a href="#">Calendario</a><a href="#" class="activo">Pagos</a><a href="#">Avisos</a></nav></div></div></section>
+</main></body></html>

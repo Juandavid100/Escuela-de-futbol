@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HU-05 Administrar mensualidades · Prototipo</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="estilos.css"></head>
+<body><main class="pagina escritorio">
+<section class="ficha">
+<a class="volver" href="index.html">‹ Todos los prototipos</a>
+<h1>Administrar mensualidades</h1>
+<span class="codigo">HU-05</span>
+<p class="rol">Rol: Gerente · Prioridad alta</p>
+<blockquote>Como gerente, quiero configurar tarifas, periodos, pagos y descuentos para mantener control financiero.</blockquote>
+<h2>Escenarios que muestra</h2><ol><li>Generar los cargos del mes</li><li>Registrar pagos totales y parciales</li><li>Anular un pago sin borrarlo</li></ol>
+<p class="nota">El pago anulado sigue visible tachado, con su motivo. El parcial muestra el saldo que falta.</p>
+<p class="nota">Requisitos: RF-18, RF-19, RF-25 · <a href="https://github.com/Juandavid100/Escuela-de-futbol/issues/5">Ver criterios completos en el issue #5</a></p>
+</section>
+<section aria-label="Prototipo de pantalla"><div class="escritorio-marco"><div class="barra-navegador"><span></span><span></span><span></span><div class="url">escuelafutbol.app/mensualidades/noviembre-2026</div></div>
+<div class="app-escritorio"><aside class="menu-lateral"><div class="marca">Escuela de Fútbol</div><a href="#">Panel</a><a href="#">Estudiantes</a><a href="#">Categorías</a><a href="#">Grupos</a><a href="#">Campeonatos</a><a href="#" class="activo">Mensualidades</a><a href="#">Usuarios y permisos</a><a href="#">Reportes</a></aside><div class="contenido-escritorio">
+<h3>Mensualidades · Noviembre 2026</h3><p style="color:var(--gris);margin:0 0 14px">Valor $80.000 · Vence el 5 de noviembre · 120 cargos generados</p>
+<div class="kpis"><div class="kpi"><b>$9,6 M</b><span>Cobrado</span></div><div class="kpi"><b>$6,1 M</b><span>Pagado</span></div><div class="kpi"><b>$3,1 M</b><span>Pendiente</span></div><div class="kpi"><b>$0,4 M</b><span>Vencido</span></div></div>
+<table class="tabla" style="margin-top:16px"><thead><tr><th>Estudiante</th><th>Cargo</th><th>Pagado</th><th>Saldo</th><th>Estado</th></tr></thead><tbody>
+<tr><td>Sofía Pérez <span class="estado neutro">Beca 50 %</span></td><td>$40.000</td><td>$40.000</td><td>$0</td><td><span class="estado ok">Pagado</span></td></tr>
+<tr><td>Juan Ruiz</td><td>$80.000</td><td>$50.000</td><td>$30.000</td><td><span class="estado pendiente">Parcial</span></td></tr>
+<tr><td>Tomás Pérez</td><td>$80.000</td><td><span class="tachado">$80.000</span></td><td>$80.000</td><td><span class="estado mal">Anulado: pago duplicado</span></td></tr>
+</tbody></table>
+<div class="acciones" style="margin-top:16px;max-width:460px"><a class="boton secundario" href="#">Aplicar descuento</a><a class="boton" href="#">Registrar pago</a></div></div></div></div></section>
+</main></body></html>

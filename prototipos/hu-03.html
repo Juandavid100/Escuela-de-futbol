@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HU-03 Crear campeonato · Prototipo</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="estilos.css"></head>
+<body><main class="pagina escritorio">
+<section class="ficha">
+<a class="volver" href="index.html">‹ Todos los prototipos</a>
+<h1>Crear campeonato</h1>
+<span class="codigo">HU-03</span>
+<p class="rol">Rol: Gerente · Prioridad alta</p>
+<blockquote>Como gerente, quiero crear un campeonato con fechas, horarios y ubicaciones para coordinar la participación de la escuela.</blockquote>
+<h2>Escenarios que muestra</h2><ol><li>Crear un campeonato</li><li>Agregar un partido</li><li>Notificar un cambio de horario</li></ol>
+<p class="nota">Al cambiar la hora del partido, el sistema muestra a quién le llegará el aviso: solo a los convocados y sus acudientes.</p>
+<p class="nota">Requisitos: RF-11, RF-14, RF-17 · <a href="https://github.com/Juandavid100/Escuela-de-futbol/issues/3">Ver criterios completos en el issue #3</a></p>
+</section>
+<section aria-label="Prototipo de pantalla"><div class="escritorio-marco"><div class="barra-navegador"><span></span><span></span><span></span><div class="url">escuelafutbol.app/campeonatos/copa-narino-2026</div></div>
+<div class="app-escritorio"><aside class="menu-lateral"><div class="marca">Escuela de Fútbol</div><a href="#">Panel</a><a href="#">Estudiantes</a><a href="#">Categorías</a><a href="#">Grupos</a><a href="#" class="activo">Campeonatos</a><a href="#">Mensualidades</a><a href="#">Usuarios y permisos</a><a href="#">Reportes</a></aside><div class="contenido-escritorio">
+<h3>Copa Nariño 2026</h3><p style="margin:0 0 14px"><span class="estado pendiente">Planificado</span> &nbsp;Sub-12 · 10 al 20 de noviembre · Entrenador: Carlos Gómez</p>
+<table class="tabla"><thead><tr><th>Partido</th><th>Fecha</th><th>Hora</th><th>Lugar</th><th>Convocados</th></tr></thead><tbody>
+<tr class="destacada"><td>Escuela vs. Deportivo Pasto Jr.</td><td>12/11</td><td><span class="tachado">15:00</span> <b>17:00</b></td><td>Estadio Libertad</td><td>16</td></tr>
+<tr><td>Escuela vs. Club Ipiales</td><td>15/11</td><td>10:00</td><td>Cancha Las Cuadras</td><td>—</td></tr>
+</tbody></table>
+<div class="aviso amarillo" style="margin-top:16px">Vas a cambiar la hora a las 17:00. Se avisará a <b>16 convocados y sus acudientes</b>. Los no convocados no recibirán el aviso.</div>
+<div class="acciones" style="margin-top:16px;max-width:420px"><a class="boton secundario" href="#">Agregar partido</a><a class="boton" href="#">Guardar y avisar</a></div></div></div></div></section>
+</main></body></html>

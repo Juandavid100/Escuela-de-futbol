@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HU-16 Justificar ausencia · Prototipo</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="estilos.css"></head>
+<body><main class="pagina">
+<section class="ficha">
+<a class="volver" href="index.html">‹ Todos los prototipos</a>
+<h1>Justificar ausencia</h1>
+<span class="codigo">HU-16</span>
+<p class="rol">Rol: Acudiente · Prioridad media</p>
+<blockquote>Como acudiente, quiero informar el motivo de una ausencia para que el entrenador tenga el contexto necesario.</blockquote>
+<h2>Escenarios que muestra</h2><ol><li>Enviar una justificación</li><li>Exigir el motivo</li></ol>
+<p class="nota">La justificación siempre va ligada a una actividad concreta. El motivo es obligatorio.</p>
+<p class="nota">Requisitos: RF-23 · <a href="https://github.com/Juandavid100/Escuela-de-futbol/issues/16">Ver criterios completos en el issue #16</a></p>
+</section>
+<section aria-label="Prototipo de pantalla"><div class="telefono"><div class="estado-sistema"><span>9:41</span><span>Escuela de Fútbol</span></div>
+<div class="pantalla"><header class="barra-app"><a class="atras" href="#">‹ Volver</a><h3>Justificar ausencia</h3><p>Sofía Pérez</p></header><div class="cuerpo">
+<label class="campo"><span>Actividad</span><select><option>Entrenamiento · 5 nov · 16:00 (ausente)</option></select></label>
+<label class="campo error"><span>Motivo *</span><textarea placeholder="Ej.: cita médica"></textarea><span class="ayuda">Debe escribir el motivo de la ausencia</span></label>
+<label class="campo"><span>Soporte (opcional)</span><input value="incapacidad_sofia.jpg"></label>
+<div class="aviso amarillo">La asistencia cambiará a "justificado" cuando el entrenador apruebe.</div>
+<a class="boton ancho" href="#">Enviar justificación</a></div><nav class="navegacion"><a href="#">Inicio</a><a href="#" class="activo">Calendario</a><a href="#">Pagos</a><a href="#">Avisos</a></nav></div></div></section>
+</main></body></html>

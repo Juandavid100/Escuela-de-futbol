@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HU-06 Ver operación de la escuela · Prototipo</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="estilos.css"></head>
+<body><main class="pagina escritorio">
+<section class="ficha">
+<a class="volver" href="index.html">‹ Todos los prototipos</a>
+<h1>Ver operación de la escuela</h1>
+<span class="codigo">HU-06</span>
+<p class="rol">Rol: Gerente · Prioridad baja</p>
+<blockquote>Como gerente, quiero consultar reportes de grupos, asistencia, campeonatos y cartera para tomar decisiones.</blockquote>
+<h2>Escenarios que muestra</h2><ol><li>Filtrar el reporte de asistencia</li><li>Ver la cartera</li><li>Ver el panel de gestión</li></ol>
+<p class="nota">Panel con los filtros arriba; todos los datos se recalculan con temporada, grupo y fechas.</p>
+<p class="nota">Requisitos: RF-24, RF-28 · <a href="https://github.com/Juandavid100/Escuela-de-futbol/issues/6">Ver criterios completos en el issue #6</a></p>
+</section>
+<section aria-label="Prototipo de pantalla"><div class="escritorio-marco"><div class="barra-navegador"><span></span><span></span><span></span><div class="url">escuelafutbol.app/reportes</div></div>
+<div class="app-escritorio"><aside class="menu-lateral"><div class="marca">Escuela de Fútbol</div><a href="#">Panel</a><a href="#">Estudiantes</a><a href="#">Categorías</a><a href="#">Grupos</a><a href="#">Campeonatos</a><a href="#">Mensualidades</a><a href="#">Usuarios y permisos</a><a href="#" class="activo">Reportes</a></aside><div class="contenido-escritorio">
+<h3>Reportes de la escuela</h3>
+<div class="dos-col" style="grid-template-columns:repeat(4,1fr);margin:10px 0 16px">
+ <label class="campo"><span>Temporada</span><select><option>2026</option></select></label>
+ <label class="campo"><span>Grupo</span><select><option>Sub-10 A</option></select></label>
+ <label class="campo"><span>Desde</span><input value="01/10/2026"></label>
+ <label class="campo"><span>Hasta</span><input value="31/10/2026"></label></div>
+<div class="kpis"><div class="kpi"><b>120</b><span>Estudiantes activos</span></div><div class="kpi"><b>87 %</b><span>Asistencia promedio</span></div><div class="kpi"><b>14</b><span>Cupos libres</span></div><div class="kpi"><b>2</b><span>Campeonatos próximos</span></div></div>
+<table class="tabla" style="margin-top:16px"><thead><tr><th>Estudiante</th><th>Asistencia</th><th></th></tr></thead><tbody>
+<tr><td>Sofía Pérez</td><td style="width:55%"><div class="barra-progreso"><i style="width:95%"></i></div></td><td>95 %</td></tr>
+<tr><td>Juan Ruiz</td><td><div class="barra-progreso"><i style="width:82%"></i></div></td><td>82 %</td></tr>
+<tr class="destacada"><td>Andrés Mora</td><td><div class="barra-progreso"><i style="width:58%;background:var(--roja)"></i></div></td><td>58 %</td></tr>
+</tbody></table>
+<div class="acciones" style="margin-top:16px;max-width:300px"><a class="boton secundario" href="#">Exportar a Excel</a></div></div></div></div></section>
+</main></body></html>

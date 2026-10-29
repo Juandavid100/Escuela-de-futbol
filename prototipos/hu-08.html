@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HU-08 Registrar asistencia · Prototipo</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="estilos.css"></head>
+<body><main class="pagina">
+<section class="ficha">
+<a class="volver" href="index.html">‹ Todos los prototipos</a>
+<h1>Registrar asistencia</h1>
+<span class="codigo">HU-08</span>
+<p class="rol">Rol: Entrenador · Prioridad alta</p>
+<blockquote>Como entrenador, quiero tomar asistencia por entrenamiento o partido para llevar seguimiento de participación.</blockquote>
+<h2>Escenarios que muestra</h2><ol><li>Tomar asistencia desde el teléfono</li><li>Registrar cada estado</li><li>Corregir una asistencia con motivo</li></ol>
+<p class="nota">Todos empiezan en P (presente): el entrenador solo toca a los que faltan o llegaron tarde y guarda. Tres pasos.</p>
+<p class="nota">Requisitos: RF-13, RF-25 · <a href="https://github.com/Juandavid100/Escuela-de-futbol/issues/8">Ver criterios completos en el issue #8</a></p>
+</section>
+<section aria-label="Prototipo de pantalla"><div class="telefono"><div class="estado-sistema"><span>9:41</span><span>Escuela de Fútbol</span></div>
+<div class="pantalla"><header class="barra-app"><a class="atras" href="#">‹ Volver</a><h3>Asistencia</h3><p>Sub-10 A · Hoy 16:00 · Cancha Las Cuadras</p></header><div class="cuerpo">
+<div style="display:flex;gap:10px;font-size:13px;color:var(--gris)"><span>P presente</span><span>A ausente</span><span>T tarde</span><span>J justificado</span></div>
+<div class="tarjeta" style="padding:4px 12px">
+<div class="fila"><span class="nombre">Sofía Pérez</span><div class="marcador"><button>P</button><button>A</button><button class="on-t">T</button><button>J</button></div></div>
+<div class="fila"><span class="nombre">Juan Ruiz</span><div class="marcador"><button>P</button><button class="on-a">A</button><button>T</button><button>J</button></div></div>
+<div class="fila"><span class="nombre">Andrés Mora</span><div class="marcador"><button class="on-p">P</button><button>A</button><button>T</button><button>J</button></div></div>
+<div class="fila"><span class="nombre">Valentina Erazo</span><div class="marcador"><button class="on-p">P</button><button>A</button><button>T</button><button>J</button></div></div>
+<div class="fila"><span class="nombre">Camila Bravo</span><div class="marcador"><button>P</button><button>A</button><button>T</button><button class="on-j">J</button></div></div>
+</div>
+<p style="font-size:14px;margin:6px 0 0">16 presentes · 1 ausente · 1 tarde · 1 justificado</p>
+<a class="boton ancho" href="#">Guardar asistencia</a></div><nav class="navegacion"><a href="#">Inicio</a><a href="#">Grupos</a><a href="#" class="activo">Asistencia</a><a href="#">Campeonatos</a></nav></div></div></section>
+</main></body></html>

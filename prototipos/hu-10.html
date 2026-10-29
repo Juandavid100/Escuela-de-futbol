@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HU-10 Cambiar detalles de actividad · Prototipo</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="estilos.css"></head>
+<body><main class="pagina">
+<section class="ficha">
+<a class="volver" href="index.html">‹ Todos los prototipos</a>
+<h1>Cambiar detalles de actividad</h1>
+<span class="codigo">HU-10</span>
+<p class="rol">Rol: Entrenador · Prioridad media</p>
+<blockquote>Como entrenador autorizado, quiero actualizar hora o ubicación de un entrenamiento o partido para mantener informadas a las familias.</blockquote>
+<h2>Escenarios que muestra</h2><ol><li>Cambiar la hora</li><li>Cancelar un entrenamiento</li><li>Registrar el cambio</li></ol>
+<p class="nota">Antes de guardar, el entrenador ve a quién se avisará. El historial guarda el valor anterior y el nuevo.</p>
+<p class="nota">Requisitos: RF-10, RF-11, RF-17, RF-25 · <a href="https://github.com/Juandavid100/Escuela-de-futbol/issues/10">Ver criterios completos en el issue #10</a></p>
+</section>
+<section aria-label="Prototipo de pantalla"><div class="telefono"><div class="estado-sistema"><span>9:41</span><span>Escuela de Fútbol</span></div>
+<div class="pantalla"><header class="barra-app"><a class="atras" href="#">‹ Volver</a><h3>Editar entrenamiento</h3><p>Sub-10 A · Miércoles 5 de noviembre</p></header><div class="cuerpo">
+<label class="campo"><span>Hora</span><input value="17:00"><span class="ayuda">Antes: 16:00</span></label>
+<label class="campo"><span>Lugar</span><input value="Cancha Las Cuadras"></label>
+<div class="mapa" aria-label="Mapa de la cancha"></div>
+<div class="aviso amarillo">Se avisará a 18 estudiantes y sus acudientes. El recordatorio de las 16:00 se anulará.</div>
+<div class="acciones"><a class="boton peligro" href="#">Cancelar entrenamiento</a><a class="boton" href="#">Guardar cambio</a></div>
+<p class="det" style="font-size:13px;color:var(--gris)">Último cambio: hora 16:00 → 17:00 · Carlos Gómez · 28/10 18:20</p></div><nav class="navegacion"><a href="#" class="activo">Inicio</a><a href="#">Grupos</a><a href="#">Asistencia</a><a href="#">Campeonatos</a></nav></div></div></section>
+</main></body></html>

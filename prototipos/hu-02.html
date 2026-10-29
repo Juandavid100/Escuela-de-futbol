@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HU-02 Configurar categorías · Prototipo</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="estilos.css"></head>
+<body><main class="pagina escritorio">
+<section class="ficha">
+<a class="volver" href="index.html">‹ Todos los prototipos</a>
+<h1>Configurar categorías</h1>
+<span class="codigo">HU-02</span>
+<p class="rol">Rol: Gerente · Prioridad alta</p>
+<blockquote>Como gerente, quiero definir categorías por temporada y reglas de edad para organizar a los estudiantes.</blockquote>
+<h2>Escenarios que muestra</h2><ol><li>Proponer cambios de categoría antes de aplicarlos</li><li>Aprobar una excepción</li><li>Dejar pendiente si no hay cupo</li></ol>
+<p class="nota">Nada cambia hasta que el gerente aprueba. La fila resaltada es la excepción con su motivo; la de abajo queda pendiente por falta de cupo.</p>
+<p class="nota">Requisitos: RF-07, RF-08 · <a href="https://github.com/Juandavid100/Escuela-de-futbol/issues/2">Ver criterios completos en el issue #2</a></p>
+</section>
+<section aria-label="Prototipo de pantalla"><div class="escritorio-marco"><div class="barra-navegador"><span></span><span></span><span></span><div class="url">escuelafutbol.app/categorias/cambios-2027</div></div>
+<div class="app-escritorio"><aside class="menu-lateral"><div class="marca">Escuela de Fútbol</div><a href="#">Panel</a><a href="#">Estudiantes</a><a href="#" class="activo">Categorías</a><a href="#">Grupos</a><a href="#">Campeonatos</a><a href="#">Mensualidades</a><a href="#">Usuarios y permisos</a><a href="#">Reportes</a></aside><div class="contenido-escritorio">
+<h3>Cambios de categoría · Temporada 2027</h3><p style="color:var(--gris);margin:0 0 14px">Fecha de corte: 1 de enero de 2027. Revisa y aprueba antes de aplicar.</p>
+<table class="tabla"><thead><tr><th>Estudiante</th><th>Nacimiento</th><th>Actual</th><th>Propuesta</th><th>Grupo</th><th>Decisión</th></tr></thead><tbody>
+<tr><td>Juan Ruiz</td><td>20/05/2016</td><td>Sub-10</td><td>Sub-10</td><td>Sub-10 A</td><td><span class="estado neutro">Excepción: recomendación del entrenador</span></td></tr>
+<tr><td>Valentina Erazo</td><td>02/02/2015</td><td>Sub-10</td><td><b>Sub-12</b></td><td>Sub-12 B</td><td><span class="estado ok">Aprobado</span></td></tr>
+<tr class="destacada"><td>Andrés Mora</td><td>14/08/2015</td><td>Sub-10</td><td><b>Sub-12</b></td><td>Sin cupo</td><td><span class="estado pendiente">Pendiente de asignación</span></td></tr>
+<tr><td>Camila Bravo</td><td>30/11/2014</td><td>Sub-12</td><td><b>Sub-14</b></td><td>Sub-14 A</td><td><a class="boton secundario" style="min-height:32px;padding:0 10px;font-size:14px" href="#">Aprobar</a></td></tr>
+</tbody></table>
+<div class="acciones" style="margin-top:18px;max-width:460px"><a class="boton secundario" href="#">Exportar lista</a><a class="boton" href="#">Aplicar cambios aprobados</a></div></div></div></div></section>
+</main></body></html>

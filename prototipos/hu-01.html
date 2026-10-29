@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HU-01 Administrar estudiantes · Prototipo</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="estilos.css"></head>
+<body><main class="pagina escritorio">
+<section class="ficha">
+<a class="volver" href="index.html">‹ Todos los prototipos</a>
+<h1>Administrar estudiantes</h1>
+<span class="codigo">HU-01</span>
+<p class="rol">Rol: Gerente · Prioridad alta</p>
+<blockquote>Como gerente, quiero registrar, editar, trasladar y retirar estudiantes para mantener actualizada la matrícula de la escuela.</blockquote>
+<h2>Escenarios que muestra</h2><ol><li>Registrar un estudiante nuevo correctamente</li><li>Validar campos obligatorios</li><li>Advertir cuando el grupo está lleno</li></ol>
+<p class="nota">El formulario muestra un error de validación en la acudiente y avisa que el grupo elegido está a un cupo de llenarse.</p>
+<p class="nota">Requisitos: RF-04, RF-05, RF-25, RF-27 · <a href="https://github.com/Juandavid100/Escuela-de-futbol/issues/1">Ver criterios completos en el issue #1</a></p>
+</section>
+<section aria-label="Prototipo de pantalla"><div class="escritorio-marco"><div class="barra-navegador"><span></span><span></span><span></span><div class="url">escuelafutbol.app/estudiantes/nuevo</div></div>
+<div class="app-escritorio"><aside class="menu-lateral"><div class="marca">Escuela de Fútbol</div><a href="#">Panel</a><a href="#" class="activo">Estudiantes</a><a href="#">Categorías</a><a href="#">Grupos</a><a href="#">Campeonatos</a><a href="#">Mensualidades</a><a href="#">Usuarios y permisos</a><a href="#">Reportes</a></aside><div class="contenido-escritorio">
+<h3>Registrar estudiante</h3><p class="sub" style="color:var(--gris);margin:0 0 16px">Los campos con * son obligatorios.</p>
+<div class="dos-col">
+ <label class="campo"><span>Nombres *</span><input value="Sofía"></label>
+ <label class="campo"><span>Apellidos *</span><input value="Pérez Rosero"></label>
+ <label class="campo"><span>Documento *</span><input value="1085001234"></label>
+ <label class="campo"><span>Fecha de nacimiento *</span><input value="10/03/2016"><span class="ayuda">Edad: 10 años · Categoría sugerida: Sub-10</span></label>
+ <label class="campo error"><span>Acudiente *</span><input value="" placeholder="Buscar por nombre o documento"><span class="ayuda">Un menor de edad debe tener un acudiente</span></label>
+ <label class="campo"><span>Grupo *</span><select><option>Sub-10 A · 19 de 20 cupos</option></select></label>
+ <label class="campo"><span>Contacto de emergencia</span><input value="Marta Pérez · 310 555 0192"></label>
+ <label class="campo"><span>Temporada</span><select><option>2026</option></select></label>
+</div>
+<div class="aviso amarillo" style="margin-top:16px">El grupo Sub-10 A quedará lleno con esta inscripción (20 de 20).</div>
+<div class="acciones" style="margin-top:16px;max-width:420px"><a class="boton secundario" href="#">Cancelar</a><a class="boton" href="#">Registrar estudiante</a></div></div></div></div></section>
+</main></body></html>
