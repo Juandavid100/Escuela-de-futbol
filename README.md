@@ -11,6 +11,10 @@ Proyecto final de Diseño de Software, Universidad Cooperativa de Colombia, sede
 - **Acudiente**: consulta las actividades y paga las mensualidades de sus estudiantes.
 - **Estudiante**: consulta su perfil, sus actividades y su progreso.
 
+## API REST (código)
+
+El código está en [`soccer-manager/`](soccer-manager/). Es una API en Spring Boot con MongoDB, organizada por capas: controller, service, repository y modelo. Allí están las instrucciones para ejecutarla y la colección de Postman para probarla.
+
 ## Backlog
 
 Las 20 historias de usuario están en [Issues](../../issues), con criterios de aceptación en Gherkin.
